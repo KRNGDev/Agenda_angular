@@ -1,0 +1,61 @@
+/* Estilo básico y reseteo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para el contenedor del menú de navegación */
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo claro */
+  border: 1px solid #ddd; /* Borde claro */
+  border-radius: 8px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  gap: 10px; /* Espacio entre los elementos */
+  margin-bottom: 20px; /* Espacio inferior para separar del contenido siguiente */
+}
+
+/* Estilo para el campo de texto */
+#menu input[type="text"],
+#menu input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Esquinas ligeramente redondeadas */
+  width: 200px; /* Ancho fijo para un diseño consistente */
+  font-size: 16px; /* Tamaño de fuente adecuado */
+  background-color: #fff; /* Fondo blanco para los campos de entrada */
+}
+
+/* Estilo para el botón */
+#menu button {
+  padding: 10px 20px;
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Esquinas redondeadas */
+  background-color: #4caf50; /* Color verde para el botón */
+  color: white; /* Texto blanco para contraste */
+  font-size: 16px; /* Tamaño de fuente adecuado */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+}
+
+/* Efecto hover para el botón */
+#menu button:hover {
+  background-color: #45a049; /* Un tono más oscuro de verde al pasar el cursor */
+}
+
+/* Asegura que los campos de entrada no crezcan más de lo necesario en pantallas pequeñas */
+@media (max-width: 600px) {
+  #menu {
+    flex-direction: column;
+  }
+  #menu input[type="text"],
+  #menu input[type="date"],
+  #menu button {
+    width: 100%;
+    max-width: none; /* Anula cualquier límite de ancho */
+  }
+}

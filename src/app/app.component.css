@@ -1,3 +1,48 @@
-h1 {
-  color: red;
+/* Reseteo de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para el cuerpo del documento */
+body {
+  background-color: #f0f2f5; /* Fondo claro para un look moderno */
+  color: #333; /* Color de texto oscuro para buena legibilidad */
+  line-height: 1.6; /* Mejora la legibilidad del texto */
+  padding: 20px; /* Espacio alrededor del contenido */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenido cubra toda la altura de la ventana */
+}
+
+/* Estilo para el header */
+header {
+  background-color: #4caf50; /* Color verde para el encabezado */
+  color: white; /* Texto blanco para buen contraste */
+  padding: 20px;
+  text-align: center; /* Centra el texto */
+  border-radius: 8px; /* Esquinas redondeadas */
+  margin-bottom: 20px; /* Espacio inferior para separar del contenido principal */
+}
+
+/* Estilo para el main */
+main {
+  flex: 1; /* Permite que main crezca y ocupe el espacio disponible */
+  background-color: white; /* Fondo blanco para el contenido principal */
+  border: 1px solid #ddd; /* Borde claro */
+  border-radius: 8px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  padding: 20px; /* Espacio interno */
+}
+
+/* Estilo para el footer */
+footer {
+  background-color: #333; /* Fondo oscuro para el pie de página */
+  color: white; /* Texto blanco para contraste */
+  text-align: center; /* Centra el texto */
+  padding: 10px 20px; /* Espacio interno */
+  margin-top: 20px; /* Espacio superior para separar del contenido principal */
+  border-radius: 8px; /* Esquinas redondeadas */
 }
