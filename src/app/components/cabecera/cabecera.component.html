@@ -1,5 +1,14 @@
 <nav id="menu">
-  <input type="text" name="tarea" id="tarea" placeholder="Tarea" />
-  <input type="date" name="fecha" id="fecha" />
-  <button>Crear</button>
+  <input
+    [(ngModel)]="nombre"
+    type="text"
+    name="tarea"
+    id="tarea"
+    placeholder="Tarea"
+  />
+  <input [(ngModel)]="fecha" type="date" name="fecha" id="fecha" />
+
+  <button (click)="crearTarea()">Crear</button>
+
+  {{ gestorTareas.tareas | json }}
 </nav>
